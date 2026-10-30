@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prism Case — Detective Stories &amp; Deductions</title>
+<meta name="description" content="Four offline detective cases. Question alibis, compare evidence and find the contradiction. All four cases are included and playable offline.">
+<link rel="icon" type="image/png" href="AppStore/brand-v2/icon-prism-noir-1024.png">
+<style>
+  :root {
+    --bg: #0d0c0b;
+    --card: #1b1917;
+    --ink: #f3efe8;
+    --dim: #9b948a;
+    --amber: #d9a34a;
+    --rule: #2a2724;
+    --serif: "New York", "Iowan Old Style", Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 880px; margin: 0 auto; padding: 0 24px 96px; }
+  a { color: var(--amber); }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 700; line-height: 1.15; margin: 0; }
+  h1 { font-size: clamp(38px, 7vw, 62px); letter-spacing: -0.01em; }
+  h2 { font-size: clamp(24px, 4vw, 32px); margin: 0 0 18px; }
+  h3 { font-size: 20px; margin: 0 0 8px; }
+  p { margin: 0 0 14px; }
+  .kicker {
+    font: 700 12px/1 var(--sans);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin: 0 0 18px;
+  }
+  header.hero { padding: 96px 0 48px; }
+  .lede { font-size: clamp(18px, 2.4vw, 21px); color: var(--dim); max-width: 34em; }
+  .quote {
+    font-family: var(--serif);
+    font-size: clamp(20px, 3vw, 26px);
+    line-height: 1.4;
+    border-left: 3px solid var(--amber);
+    padding-left: 20px;
+    margin: 32px 0 0;
+  }
+  section { border-top: 1px solid var(--rule); padding: 56px 0 0; margin-top: 56px; }
+  .grid { display: grid; gap: 18px; }
+  @media (min-width: 700px) { .grid.two { grid-template-columns: 1fr 1fr; } }
+  .card { background: var(--card); border-radius: 14px; padding: 22px; }
+  .card p:last-child { margin-bottom: 0; }
+  .meta { font-size: 13px; color: var(--dim); }
+  ol.steps { list-style: none; counter-reset: step; padding: 0; margin: 0; }
+  ol.steps li { counter-increment: step; position: relative; padding-left: 44px; margin-bottom: 18px; }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute; left: 0; top: 2px;
+    width: 28px; height: 28px; border-radius: 50%;
+    display: grid; place-items: center;
+    background: rgba(217,163,74,0.14); color: var(--amber);
+    font: 700 14px/1 var(--sans);
+  }
+  .shots { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+  .shots img { width: 100%; height: auto; display: block; border-radius: 12px; border: 1px solid var(--rule); }
+  .shots figure { margin: 0; }
+  .shots figcaption { font-size: 13px; color: var(--dim); margin-top: 8px; }
+  footer { border-top: 1px solid var(--rule); margin-top: 72px; padding-top: 28px; font-size: 14px; color: var(--dim); }
+  footer a { margin-right: 18px; }
+</style>
+</head>
+<body>
+<main>
+
+  <header class="hero">
+    <img src="AppStore/brand-v2/icon-prism-noir-1024.png" width="112" height="112" alt="Prism Case icon: a prism refracting light inside a gold magnifying glass" style="border-radius:24px;margin-bottom:24px">
+    <p class="kicker">Prism Case · iPhone &amp; iPad</p>
+    <h1>Every story has a fracture.</h1>
+    <p class="lede" style="margin-top:22px">Four detective cases built around testimony and physical clues. Question the alibis. Compare the evidence. Find the statement that cannot be true.</p>
+    <p class="quote">“I never went into that room. Not once, all night.”<br><span class="meta">He says it evenly. In your hand is a cufflink taken from the dead man's fist.</span></p>
+  </header>
+
+  <section>
+    <h2>How it plays</h2>
+    <ol class="steps">
+      <li><strong>Interrogate.</strong> Pick a person, ask a question. You get an answer, and most of it will be true.</li>
+      <li><strong>Present evidence.</strong> Set a piece of physical evidence against a specific statement. Get it right and you watch them change their story. Get it wrong and they deny you politely.</li>
+      <li><strong>Accuse.</strong> Name the killer, then hand over the one item that ties them to the scene. Both have to be right.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Four cases, ready to investigate</h2>
+    <div class="grid two">
+      <div class="card">
+        <h3>The Midnight Gallery</h3>
+        <p>Opening night at the Egret Gallery ends with its owner dead in the third-floor darkroom. The door locked from the inside. The key was in his own pocket.</p>
+        <p class="meta">4 suspects · 8 pieces of evidence</p>
+      </div>
+      <div class="card">
+        <h3>Before the Curtain</h3>
+        <p>Opening night at a small theatre. The director is found in the dressing room, his hand still on the lamp switch. There's a puddle on the floor and a short section of the power cord has been stripped bare.</p>
+        <p class="meta">3 suspects · 6 pieces of evidence</p>
+      </div>
+      <div class="card">
+        <h3>The Seventh Minute</h3>
+        <p>A host's voice is still on the radio when his final broadcast ends. Establish what was recorded, what was aired, and when he was last seen alive.</p>
+        <p class="meta">4 suspects · 8 pieces of evidence</p>
+      </div>
+      <div class="card">
+        <h3>The Fourth Page</h3>
+        <p>A signed document appears to settle an inheritance. Trace the page's origin and the evidence missing from the study.</p>
+        <p class="meta">4 suspects · 8 pieces of evidence</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Read the case in English</h2>
+    <p>The interface, evidence names and testimony stay in English, regardless of your device language.</p>
+  </section>
+
+  <section>
+    <h2>Screens</h2>
+    <div class="shots">
+      <figure>
+        <img src="AppStore/screenshots/6.9-inch/01-contradiction.png" alt="Interrogation screen with a contradiction highlighted in red">
+        <figcaption>Break a statement</figcaption>
+      </figure>
+      <figure>
+        <img src="AppStore/screenshots/6.9-inch/02-evidence.png" alt="Evidence picker listing the evidence found so far">
+        <figcaption>Present evidence</figcaption>
+      </figure>
+      <figure>
+        <img src="AppStore/screenshots/6.9-inch/04-evidence-board.png" alt="Evidence board">
+        <figcaption>The evidence board</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Ads and privacy, plainly</h2>
+    <p>Prism Case is free. Advertising is currently inactive. The app includes a Google AdMob integration for future use; with no ad configuration, it does not start the ad SDK or request tracking permission. If ads are enabled later, iOS may ask whether the app may track you across apps (Apple's ATT prompt). You can decline and keep playing without granting access to your advertising identifier. There is no account or sign-up. Full detail in the <a href="privacy.html">privacy policy</a>.</p>
+  </section>
+
+  <footer>
+    <p>
+      <a href="privacy.html">Privacy policy</a>
+      <span>Contact email will be added before release.</span>
+    </p>
+    <p>All cases are fiction. For readers who enjoy alibis, timelines and evidence-led deductions.</p>
+    <p>© 2026 junhao.hong</p>
+  </footer>
+
+</main>
+</body>
+</html>
